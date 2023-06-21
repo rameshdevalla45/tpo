@@ -5,7 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 
-//import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
+import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
@@ -38,7 +38,7 @@ import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
  * separately
  */
 
-import Hero from "components/hero/TwoColumnWithVideo.js";
+//import Hero from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
 // import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";

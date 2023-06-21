@@ -38,22 +38,21 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 
 
 export default ({
-  heading = "Better, Faster and Cheaper Cloud.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  heading = "Unlocking Student Potential with TPO.AI",
+  description = "At TPO.AI, we believe that colleges are key stakeholders in the career development of their students. By collaborating with colleges, we aim to create a seamless and effective pathway for recent graduates to secure their first job and embark on a successful career journey.",
   imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
   imageDecoratorBlob = true,
 
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
   buttonRounded = true,
-  features = ["Available in 7 Locations", "Premium Internet Backbone", "99.99% Uptime SLA"],
+  features = ["Accurate Skill Assessment", "Personalized Learning Pathways", "Automated Resume Building","Industry Connections"],
   testimonial = {
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     customerName: "Charlotte Hale",
     customerCompany: "Delos Inc."
   }
 }) => {
-  debugger;
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>

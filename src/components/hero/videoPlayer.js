@@ -11,7 +11,7 @@ const Video = styled.video`
 `;
 
 const VideoPlayer = ({ videoUrl }) => {
-    debugger;
+
     const videoRef = useRef(null);
 
     const playVideo = () => {
