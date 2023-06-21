@@ -136,7 +136,7 @@ export default function App() {
         heading={<>Amazing <HighlightedText>Features</HighlightedText></>}
       />
       <MainFeature
-        heading={<>Cloud built by and for <HighlightedText>Professionals</HighlightedText></>}
+        heading={<>Streamline College Placements with  <HighlightedText>TPO.AI's Innovative Technology</HighlightedText></>}
       />
       <Testimonial 
         heading={<>Our Clients <HighlightedText>Love Us</HighlightedText></>}

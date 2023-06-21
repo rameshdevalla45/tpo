@@ -74,7 +74,7 @@ export default () => {
               <LinkListItem>
                 <Link href="#">Log In</Link>
               </LinkListItem>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">Personal</Link>
               </LinkListItem>
               <LinkListItem>
@@ -82,32 +82,32 @@ export default () => {
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Team</Link>
-              </LinkListItem>
+              </LinkListItem> */}
             </LinkList>
           </Column>
           <Column>
             <ColumnHeading>Press</ColumnHeading>
             <LinkList>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">Logos</Link>
-              </LinkListItem>
+              </LinkListItem> */}
               <LinkListItem>
                 <Link href="#">Events</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Stories</Link>
               </LinkListItem>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">Office</Link>
-              </LinkListItem>
+              </LinkListItem> */}
             </LinkList>
           </Column>
           <Column>
             <ColumnHeading>Legal</ColumnHeading>
             <LinkList>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">GDPR</Link>
-              </LinkListItem>
+              </LinkListItem> */}
               <LinkListItem>
                 <Link href="#">Privacy Policy</Link>
               </LinkListItem>
@@ -138,7 +138,7 @@ export default () => {
             <LogoImg src={LogoImage} />
             <LogoText>Treact Inc.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2023 TPO.AI  All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />

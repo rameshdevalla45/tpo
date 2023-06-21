@@ -67,7 +67,7 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "",
-  heading = "Testimonials",
+  heading = "Testimonials ",
   description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   testimonials = null,
   textOnLeft = false

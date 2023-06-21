@@ -73,9 +73,9 @@ export default ({
   imageRounded = true,
   imageBorder = false,
   imageShadow = false,
-  subheading = "Testimonials",
+  subheading = "Testimonials ",
   heading = "Our Clients Love Us.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
+  description = "TPO.AI has been a game-changer for our students' career development. Let's see what our clients are saying  .",
   textOnLeft = false,
   testimonials = [
     {
@@ -84,11 +84,11 @@ export default ({
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
       heading: "Amazing User Experience",
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "The platform's comprehensive features and personalized guidance have helped them assess their skills, explore career paths, and secure valuable internship opportunities. Our students are more confident and prepared for their professional journeys, thanks to tpo.ai.",
       customerName: "Charlotte Hale",
       customerTitle: "CEO, Delos Inc."
     },
-    {
+   /*  {
       stars: 5,
       profileImageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
@@ -97,7 +97,7 @@ export default ({
         "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       customerName: "Adam Cuppy",
       customerTitle: "Founder, EventsNYC"
-    }
+    } */
   ]
 }) => {
   const [sliderRef, setSliderRef] = useState(null);
@@ -124,13 +124,13 @@ export default ({
                   <TestimonialHeading>{testimonial.heading}</TestimonialHeading>
                   <Quote>{testimonial.quote}</Quote>
                   <CustomerInfoAndControlsContainer>
-                    <CustomerInfo>
+                    {/* <CustomerInfo>
                       <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} />
                       <CustomerTextInfo>
                         <CustomerName>{testimonial.customerName}</CustomerName>
                         <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
                       </CustomerTextInfo>
-                    </CustomerInfo>
+                    </CustomerInfo> */}
                     <Controls>
                       <ControlButton onClick={sliderRef?.slickPrev}>
                         <ArrowLeftIcon />

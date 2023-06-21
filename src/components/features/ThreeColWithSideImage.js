@@ -5,18 +5,14 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
-
 import defaultCardImage from "images/shield-icon.svg";
-
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
-
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
-import { Grid } from "@mui/material";
 
 
 const Container = tw.div`relative`;
@@ -87,7 +83,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     {
       imageSrc: ReliableIconImage,
       title: "AI Resume Builder",
-      description: "Create a professional, well-structured resume with personalized guidance, showcasing your skills, experiences, and achievements."
+      description: "Create a professional, well structured resume with personalized guidance, showcasing your skills, experiences, and achievements."
     },
     {
       imageSrc: FastIconImage,
@@ -102,40 +98,36 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   ];
 
   if (!cards) cards = defaultCards;
-debugger;
+  debugger;
   return (
     <>
-    <Container id="features">
-      <TwoColumnContainer>
-        {subheading && <Subheading>{subheading}</Subheading>}
-        <Heading>{heading}</Heading>
-        {/* {description && <Description>{description}</Description>} */}
-        <VerticalSpacer />        
-        {cards.map((card, i) => (
-          <Column key={i}>
-            <Card>
-              <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
-              </span>
-              <span className="textContainer">
-                <span className="title">{card.title || "Fully Secure"}</span>
-                <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
-                </p>
-              </span>
-            </Card>
-            
-          </Column>
-         
-        ))}
-         <video controls style={{ width: "650px" }}>
+      <Container id="features">
+        <TwoColumnContainer>
+          {subheading && <Subheading>{subheading}</Subheading>}
+          <Heading>{heading}</Heading>
+          {/* {description && <Description>{description}</Description>} */}
+          <VerticalSpacer />
+          {cards.map((card, i) => (
+            <Column key={i}>
+              <Card>
+                <span className="imageContainer">
+                  <img src={card.imageSrc || defaultCardImage} alt="" />
+                </span>
+                <span className="textContainer">
+                  <span className="title">{card.title || "Fully Secure"}</span>
+                  <p className="description">
+                    {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  </p>
+                </span>
+              </Card>
+            </Column>
+          ))}
+          <video controls style={{ width: "650px" }}>
             <source src="/videos/tpoAI.mp4" type="video/mp4" />
           </video>
-
-         
-      </TwoColumnContainer>
-      <DecoratorBlob />
-    </Container>
+        </TwoColumnContainer>
+        <DecoratorBlob />
+      </Container>
     </>
   );
 };
