@@ -16,10 +16,12 @@ import CustomizeIconImage from "images/customize-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
+import { Grid } from "@mui/material";
+
 
 const Container = tw.div`relative`;
 
-const ThreeColumnContainer = styled.div`
+const TwoColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
 const Subheading = tw(SubheadingBase)`mb-4`;
@@ -40,7 +42,6 @@ const Card = styled.div`
       ${tw`w-6 h-6`}
     }
   }
-
   .textContainer {
     ${tw`sm:ml-4 mt-4 sm:mt-2`}
   }
@@ -70,25 +71,46 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "Auto Skill Gap Identification",
+      description: "Identify skill gaps and tailor personalized learning pathways to bridge them effectively."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    {
+      imageSrc: SupportIconImage,
+      title: "Career Ladder",
+      description: "Suggests courses based on skill reports and helps individuals bridge their skill gaps within a career ladder."
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Performance Analytics",
+      description: "Generate comprehensive reports and analytics to track students' progress and make data-driven decisions."
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "AI Resume Builder",
+      description: "Create a professional, well-structured resume with personalized guidance, showcasing your skills, experiences, and achievements."
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Job Match Evaluator",
+      description: "Evaluate candidates' qualifications, skills, experience, and personal attributes in relation to the requirements of the job."
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Auto Job Hunt",
+      description: "Building strong industry connections and providing placement opportunities for students.."
+    },
   ];
 
   if (!cards) cards = defaultCards;
-
+debugger;
   return (
+    <>
     <Container id="features">
-      <ThreeColumnContainer>
+      <TwoColumnContainer>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
-        <VerticalSpacer />
+        {/* {description && <Description>{description}</Description>} */}
+        <VerticalSpacer />        
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
@@ -102,10 +124,18 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
                 </p>
               </span>
             </Card>
+            
           </Column>
+         
         ))}
-      </ThreeColumnContainer>
+         <video controls style={{ width: "650px" }}>
+            <source src="/videos/tpoAI.mp4" type="video/mp4" />
+          </video>
+
+         
+      </TwoColumnContainer>
       <DecoratorBlob />
     </Container>
+    </>
   );
 };

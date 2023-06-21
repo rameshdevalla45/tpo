@@ -9,7 +9,8 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { Container, ContentWithVerticalPadding } from "components/misc/Layouts.js";
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg"
-import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg"
+import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg";
+import VideoPlayer from './videoPlayer';
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
@@ -41,6 +42,7 @@ export default ({
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
   imageDecoratorBlob = true,
+
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
   buttonRounded = true,
@@ -51,6 +53,7 @@ export default ({
     customerCompany: "Delos Inc."
   }
 }) => {
+  debugger;
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>
@@ -91,7 +94,7 @@ export default ({
                 ))}
               </FeatureList>
             </TextColumn>
-            <ImageColumn>
+            {/* <ImageColumn>
               <ImageContainer>
                 <Image src={imageSrc} />
                 {imageDecoratorBlob && <ImageDecoratorBlob />}
@@ -103,7 +106,10 @@ export default ({
                 </Testimonial>
               </ImageContainer>
               <Offsetbackground />
-            </ImageColumn>
+            </ImageColumn> */}
+            <video controls style={{width:"650px"}}>
+            <source src="/videos/Product Overview.mp4"  type="video/mp4"/>
+            </video>
           </Row>
         </ContentWithVerticalPadding>
       </Container>

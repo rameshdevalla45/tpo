@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
@@ -53,7 +53,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default () => {
+export default () => { */
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
    *  1) imageSrc - the image shown at the top of the card
@@ -62,7 +62,7 @@ export default () => {
    *  If a key for a particular card is not provided, a default value is used
    */
 
-  const cards = [
+  /* const cards = [
     {
       imageSrc: ShieldIconImage,
       title: "Ads Management",
@@ -99,3 +99,4 @@ export default () => {
     </Container>
   );
 };
+ */
