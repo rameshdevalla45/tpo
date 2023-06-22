@@ -19,20 +19,20 @@ import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefc
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 export default () => {
-  const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
+  const Subheading = tw.span`uppercase tracking-widest font-bold Features t`;
   const HighlightedText = tw.span`text-primary-500`;
 
   return (
     <AnimationRevealPage>
-      <Hero roundedHeaderButton={true} />
+      <Hero roundedHeaderButton={true} /> 
       <Features
-        subheading={<Subheading>Features</Subheading>}
+        subheading={<Subheading>Features </Subheading>}
         heading={
           <>
             We have Amazing <HighlightedText>Service.</HighlightedText>
           </>
         }
-      />
+      /> 
       <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}
         imageSrc={heroScreenshotImageSrc}
@@ -62,13 +62,13 @@ export default () => {
         showDecoratorBlob={false}
         features={[
           {
-            Icon: MoneyIcon,
+            //Icon: MoneyIcon,
             title: "Affordable",
             description: "We promise to offer you the best rate we can - at par with the industry standard.",
             iconContainerCss: tw`bg-green-300 text-green-800`
           },
           {
-            Icon: BriefcaseIcon,
+            //Icon: BriefcaseIcon,
             title: "Professionalism",
             description: "We assure you that our templates are designed and created by professional designers.",
             iconContainerCss: tw`bg-red-300 text-red-800`

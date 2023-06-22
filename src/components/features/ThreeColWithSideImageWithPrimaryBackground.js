@@ -33,7 +33,7 @@ const Column = styled.div`
 const Card = styled.div`
   ${tw`flex flex-col items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
-    ${tw`bg-gray-100 text-center rounded-full p-5 flex-shrink-0`}
+    ${tw`bg-primary-1000 text-center rounded-full p-5 flex-shrink-0`}
     img {
       ${tw`w-6 h-6`}
     }

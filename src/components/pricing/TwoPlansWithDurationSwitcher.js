@@ -10,14 +10,14 @@ import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-6
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
 
 const HeaderContainer = tw.div`w-full flex flex-col items-center`;
-const Subheading = tw(SubheadingBase)`mb-4`;
+const Subheading = tw(SubheadingBase)`mb-4  text-primary-1000 `;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
-const PlanDurationSwitcher = tw.div`block w-full max-w-xs sm:inline-block sm:w-auto border-2 rounded-full px-1 py-1 mt-8`;
+const PlanDurationSwitcher = tw.div`block w-full max-w-xs sm:inline-block sm:w-auto border-2 rounded-full px-1 py-1 mt-8  `;
 const SwitchButton = styled.button`
-  ${tw`w-1/2 sm:w-32 px-4 sm:px-8 py-3 rounded-full focus:outline-none text-sm font-bold text-gray-700 transition duration-300`}
-  ${props => props.active && tw`bg-primary-500 text-gray-100`}
+  ${tw`w-1/2 sm:w-32 px-4 sm:px-8 py-3 rounded-full focus:outline-none text-sm font-bold text-gray-700 transition duration-300 `}
+  ${props => props.active && tw`bg-primary-500 text-gray-100   bg-gradient-to-r from-primary-1000 to-secondary-1000`}
 `;
 
 const PlansContainer = tw.div`flex justify-center flex-col md:flex-row items-center md:items-start relative`;
@@ -34,7 +34,7 @@ const Plan = styled.div`
 const PlanHeader = styled.div`
   ${tw`flex flex-col leading-relaxed py-8 -mx-8 bg-gray-100 rounded-t-lg`}
   .name {
-    ${tw`font-bold text-xl`}
+    ${tw` text-xl`}
   }
   .price {
     ${tw`font-bold text-4xl sm:text-5xl my-1`}
@@ -50,7 +50,7 @@ const PlanHeader = styled.div`
   }
 `;
 const PlanFeatures = styled.div`
-  ${tw`flex flex-col -mx-8 px-8 py-8 flex-1 text-sm`}
+  ${tw`flex flex-col -mx-8 px-8 py-8 flex-1`}
   .feature {
     ${tw`mt-5 first:mt-0 font-semibold text-gray-500`}
   }
@@ -58,7 +58,7 @@ const PlanFeatures = styled.div`
 
 const PlanAction = tw.div`px-4 pb-8`;
 const BuyNowButton = styled(PrimaryButtonBase)`
-  ${tw`rounded-full tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline`}
+  ${tw`rounded-full tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline bg-gradient-to-r from-primary-1000 to-secondary-1000`}
 `;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
@@ -73,30 +73,31 @@ export default ({
   heading = "Flexible Plans.",
   description = "Choose the best plan that helps you to build your student's career.",
   plans = null,
-  primaryButtonText = "Buy Now",
+  primaryButtonText = "Buy Now ",
   planDurations = [
     {
-      text: "Month",
-      switcherText: "Monthly",
-    },
-    {
-      text: "Year",
+      text: "Annum",
       switcherText: "Yearly",
-    }
+    },
+   /*  {
+      text: "Annum",
+      switcherText: "Yearly",
+    } */
   ]
 }) => {
   const defaultPlans = [
     {
-      name: "Free Plan",
-      durationPrices: ["$0", "$0"],
-      mainFeature: "For Personal Blogs",
-      features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
+      name: "Individual Subscription",
+      durationPrices: ["₹800", "₹0"],
+       
+     mainFeature: "Min 50 Students",
+      features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance",]
     },
     {
-      name: "Pro Plan",
-      durationPrices: ["$49", "$499"],
-      mainFeature: "Suited for Production Websites",
-      features: ["60 Templates", "8 Landing Pages", "22 Internal Pages", "Priority Assistance", "Lifetime Updates"],
+      name: "College Subscription",
+      durationPrices: ["₹550", "₹0"],
+      mainFeature: "Min 25 Students",
+      features: ["60 Templates", "8 Landing Pages", "22 Internal Pages", "Priority Assistance", ],
       featured: true
     }
   ];
@@ -109,7 +110,11 @@ export default ({
     <Container id="pricing">
       <ContentWithPaddingXl>
         <HeaderContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
+        {subheading && <Subheading style={{
+                background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>{subheading}</Subheading>}
           <Heading>{heading}</Heading>
           {description && <Description>{description}</Description>}
         <PlanDurationSwitcher>

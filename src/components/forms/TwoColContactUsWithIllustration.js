@@ -21,23 +21,28 @@ const Image = styled.div(props => [
 ]);
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
-const Subheading = tw(SubheadingBase)`text-center md:text-left`;
-const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+const Subheading = tw(SubheadingBase)`text-center md:text-left text-primary-1000`;
+const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight `;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
 
 const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col lg:flex-row`
 const Input = tw.input`border-2 px-5 py-3 rounded focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
 
-const SubmitButton = tw(PrimaryButtonBase)`inline-block lg:ml-6 mt-6 lg:mt-0`
+const SubmitButton = tw(PrimaryButtonBase)`inline-block lg:ml-6 mt-6 lg:mt-0 bg-gradient-to-r from-primary-1000 to-secondary-1000`
 
 export default ({
   subheading = "Contact Us",
-  heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
+  heading = <>Feel free to <span  style={{
+    background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+  }}>get in touch</span><wbr/> with us.</>,
   description = " We would love to hear from you! Whether you have a question, feedback, or a business inquiry, feel free to reach out to us using the contact details below. Our dedicated team is ready to assist you.",
   submitButtonText = "Contact Me",
+
   formAction = "#",
   formMethod = "get",
-  textOnLeft = true,
+  textOnLeft = true, 
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -49,7 +54,11 @@ export default ({
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            {subheading && <Subheading>{subheading}</Subheading>}
+          {subheading && <Subheading style={{
+                background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <Form action={formAction} method={formMethod}>

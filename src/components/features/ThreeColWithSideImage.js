@@ -20,7 +20,7 @@ const Container = tw.div`relative`;
 const TwoColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
-const Subheading = tw(SubheadingBase)`mb-4`;
+const Subheading = tw(SubheadingBase)`mb-4 text-primary-1000`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
@@ -35,19 +35,20 @@ const Card = styled.div`
   .imageContainer {
     ${tw`border text-center rounded-full p-5 flex-shrink-0`}
     img {
-      ${tw`w-6 h-6 text-green-500`}
+      ${tw`w-6 h-6`}
     }
   }
+
   .textContainer {
     ${tw`sm:ml-4 mt-4 sm:mt-2`}
   }
 
   .title {
-    ${tw`mt-4 tracking-wide font-bold text-2xl leading-none`}
+    ${tw`mt-4 tracking-wide font-bold text-2xl leading-none whitespace-nowrap`}
   }
 
   .description {
-    ${tw`mt-1 sm:mt-4 font-medium text-secondary-100 leading-loose`}
+    ${tw`mt-1 sm:mt-4 font-medium text-secondary-100 leading-loose `}
   }
 `;
 
@@ -67,7 +68,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Auto Skill Gap Identification",
+      title: "Auto Skill Gap ",
       description: "Identify skill gaps and tailor personalized learning pathways to bridge them effectively."
     },
     {
@@ -103,8 +104,12 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     <>
       <Container id="features">
         <TwoColumnContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
-          <Heading>{heading}</Heading>
+          {subheading && <Subheading style={{
+                background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>{subheading}</Subheading>}
+          <Heading >{heading}</Heading>
           {/* {description && <Description>{description}</Description>} */}
           <VerticalSpacer />
           {cards.map((card, i) => (

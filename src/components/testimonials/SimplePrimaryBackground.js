@@ -49,7 +49,7 @@ const ControlButton = styled.button`
 
 export default ({
   subheading = "",
-  heading = "Testimonials",
+  heading = "Testimonials ",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   testimonials = [
     {
@@ -84,7 +84,7 @@ export default ({
     <PrimaryBackgroundContainer>
       <ContentWithPaddingXl>
         <HeadingContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
+          {subheading && <Subheading >{subheading}</Subheading>}
           <Heading>{heading}</Heading>
           <Description>{description}</Description>
         </HeadingContainer>

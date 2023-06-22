@@ -9,13 +9,13 @@ const Row = tw.div`px-4 sm:px-16 mx-auto flex justify-center items-center relati
 
 const ColumnContainer = tw.div`lg:w-1/2 max-w-lg`
 const TextContainer = tw(ColumnContainer)`text-2xl sm:text-4xl font-bold`;
-const Subheading = tw.h6`text-primary-500 opacity-75`;
-const Heading = tw.h5`text-primary-500`;
+const Subheading = tw.h6`text-primary-1000 opacity-75`;
+const Heading = tw.h5`text-primary-1000`;
 
 const LinksContainer = tw(ColumnContainer)`flex justify-center lg:justify-end mt-6 lg:mt-0 flex-col sm:flex-row`;
 
 const Link = tw.a`w-full sm:w-auto text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 mt-4 first:mt-0 sm:mt-0 sm:mr-8 sm:last:mr-0 rounded font-bold border border-transparent tracking-wide transition duration-300 focus:outline-none focus:shadow-outline`;
-const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-primary-500 hocus:bg-primary-700`;
+const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300  bg-gradient-to-r from-primary-1000 to-secondary-1000 hocus:bg-primary-700`;
 
 const SecondaryLink = tw(Link)`text-primary-500 hover:text-primary-600 bg-gray-100 hover:bg-gray-200`;
 
@@ -26,7 +26,7 @@ export default ({
   subheading = "Interested in TPO.AI ?",
   heading = "Join the closed beta now.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "http://timerse.com",
+  primaryLinkUrl = "http://localhost:4080/",
   secondaryLinkText = "Contact Us",
   secondaryLinkUrl = "http://google.com",
   pushDownFooter = true
@@ -37,8 +37,16 @@ export default ({
       <PrimaryBackgroundContainer>
         <Row>
           <TextContainer>
-            {subheading && <Subheading>{subheading}</Subheading>}
-            <Heading>{heading}</Heading>
+            {subheading && <Subheading style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>{subheading}</Subheading>}
+            <Heading style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>{heading}</Heading>
           </TextContainer>
           <LinksContainer>
             <PrimaryLink href={primaryLinkUrl}>{primaryLinkText}</PrimaryLink>

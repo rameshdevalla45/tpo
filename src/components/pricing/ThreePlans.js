@@ -87,7 +87,7 @@ export default ({
   heading = "Flexible Plans.",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   plans = null,
-  primaryButtonText = "Buy Now"
+  primaryButtonText = "Buy Now "
 }) => {
   const defaultPlans = [
     {

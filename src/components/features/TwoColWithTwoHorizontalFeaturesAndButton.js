@@ -30,7 +30,7 @@ const DecoratorBlob = tw(
 
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
-const Subheading = tw(SubheadingBase)`text-center md:text-left`;
+const Subheading = tw(SubheadingBase)`text-center md:text-left text-primary-1000 `;
 const Heading = tw(
   SectionHeading
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
@@ -52,15 +52,15 @@ const FeatureIconContainer = styled.div`
 `;
 const FeatureHeading = tw.div`ml-3 font-bold text-xl`;
 
-const FeatureDescription = tw.div`mt-4 text-center md:text-left text-gray-600 leading-relaxed`;
+const FeatureDescription = tw.div`mt-4 text-center md:text-left text-gray-600 `;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
   tw`mt-12 text-sm inline-block mx-auto md:mx-0`,
-  props.buttonRounded && tw`rounded-full`
+  props.buttonRounded && tw`rounded-full bg-gradient-to-r from-primary-1000 to-secondary-1000`
 ]);
 
 export default ({
-  subheading = "Placement Cell",
+  subheading = "Placement Cell ",
   heading = (
     <>
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
@@ -68,12 +68,13 @@ export default ({
   ),
   description = "TPO.AI understands that finding your first job is not just about landing any job; it's about finding the right job. TPO.AI Guiding graduates towards their dream job with tailored precision and unwavering support.",
   primaryButtonText = "Learn More",
+  
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
   imageBorder = false,
-  imageShadow = false,
+  imageShadow = false, 
   showDecoratorBlob = false,
   textOnLeft = true,
   features = null,
@@ -99,7 +100,8 @@ export default ({
       title: "Time Saving",
       description: "TPO.AI utilizes advanced algorithms and automation to streamline the training and placement processes and save significant time.",
       iconContainerCss: tw`bg-red-300 text-red-800`
-    }
+    },
+  
   ];
 
   if (!features) features = defaultFeatures;
@@ -113,7 +115,11 @@ export default ({
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Subheading>{subheading}</Subheading>
+          {subheading && <Subheading style={{
+                background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <Features>

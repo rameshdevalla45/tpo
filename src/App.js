@@ -120,7 +120,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; */
-const HighlightedText = tw.span`text-primary-500`
+const HighlightedText = tw.span`text-primary-1000`
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -133,19 +133,39 @@ export default function App() {
       <Hero />
       <FeatureStats/>
       <Features 
-        heading={<>Amazing <HighlightedText>Features</HighlightedText></>}
+        heading={<>Amazing <HighlightedText style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>Features</HighlightedText></>}
       />
       <MainFeature
-        heading={<>Streamline College Placements with  <HighlightedText>TPO.AI's Innovative Technology</HighlightedText></>}
+        heading={<>Streamline College Placements with  <HighlightedText style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>TPO.AI's Innovative Technology</HighlightedText></>}
       />
       <Testimonial 
-        heading={<>Our Clients <HighlightedText>Love Us</HighlightedText></>}
+        heading={<>Our Clients <HighlightedText style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>Love Us</HighlightedText></>}
       />
       <Pricing 
-        heading={<>Flexible <HighlightedText>Plans</HighlightedText></>}
+        heading={<>Flexible <HighlightedText style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>Plans</HighlightedText></>}
       />
       <FAQ
-        heading={<>Any <HighlightedText>Questions ?</HighlightedText></>}
+        heading={<>Any <HighlightedText style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}>Questions ?</HighlightedText></>}
       />
       {/* <Blog
         subheading="Blog"

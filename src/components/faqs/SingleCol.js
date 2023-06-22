@@ -10,7 +10,7 @@ import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 
-const Subheading = tw(SubheadingBase)`mb-4 text-center`;
+const Subheading = tw(SubheadingBase)`mb-4 text-center text-primary-1000`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
@@ -77,7 +77,11 @@ export default ({
       <ContentWithPaddingXl>
         <Column>
           <HeaderContent>
-            {subheading && <Subheading>{subheading}</Subheading>}
+          {subheading && <Subheading style={{
+                background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
           </HeaderContent>

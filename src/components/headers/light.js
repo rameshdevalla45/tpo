@@ -9,7 +9,6 @@ import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/tpo.ai_logo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto
@@ -27,8 +26,8 @@ export const NavLink = tw.a`
 `;
 
 export const PrimaryLink = tw(NavLink)`
-  lg:mx-0
-  px-8 py-3 rounded bg-primary-500 text-gray-100
+  lg:mx-0 
+  px-8 py-3 rounded bg-gradient-to-r from-primary-1000 to-secondary-1000 text-gray-100
   hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
   border-b-0
 `;
@@ -49,7 +48,7 @@ export const MobileNavLinks = motion(styled.div`
 `);
 
 export const DesktopNavLinks = tw.nav`
-  hidden lg:flex flex-1 justify-between items-center
+  hidden lg:flex flex-1 justify-between items-center text-primary-500
 `;
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
