@@ -84,7 +84,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      <img style={{width:"150px",height:"70px"}} src={logo} alt="logo" />
+      <img style={{width:"130px",height:"70px"}} src={logo} alt="logo" />
     </LogoLink>
   );
 

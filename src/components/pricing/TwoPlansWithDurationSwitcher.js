@@ -51,8 +51,8 @@ const PlanHeader = styled.div`
 `;
 const PlanFeatures = styled.div`
   ${tw`flex flex-col -mx-8 px-8 py-8 flex-1`}
-  .feature {
-    ${tw`mt-5 first:mt-0 font-semibold text-gray-500`}
+  .feature { 
+    ${tw`mt-5 first:mt-0 font-semibold text-gray-500  justify-start`}
   }
 `;
 
@@ -90,14 +90,14 @@ export default ({
       name: "Individual Subscription",
       durationPrices: ["₹800", "₹0"],
        
-     mainFeature: "Min 50 Students",
-      features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance",]
+     mainFeature: "Per Student",
+      features: ["AI Skill Evaluator", "Personalized Learning Paths", "AI Resume Builder", "Performance Analytics","Placement Assistance"]
     },
     {
       name: "College Subscription",
       durationPrices: ["₹550", "₹0"],
       mainFeature: "Min 25 Students",
-      features: ["60 Templates", "8 Landing Pages", "22 Internal Pages", "Priority Assistance", ],
+      features: ["AI Skill Evaluator", "Personalized Learning Paths", "AI Resume Builder", "Performance Analytics", "Placement Assistance"],
       featured: true
     }
   ];

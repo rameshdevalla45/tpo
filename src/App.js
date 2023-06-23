@@ -140,11 +140,15 @@ export default function App() {
         }}>Features</HighlightedText></>}
       />
       <MainFeature
-        heading={<>Streamline College Placements with  <HighlightedText style={{
+        heading={<>Streamline College Placements with  <HighlightedText  style={{
           background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
-        }}>TPO.AI's Innovative Technology</HighlightedText></>}
+        }}>TPO.AI's Innovative <span  style={{
+          background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }} > Technology</span></HighlightedText></>}
       />
       <Testimonial 
         heading={<>Our Clients <HighlightedText style={{

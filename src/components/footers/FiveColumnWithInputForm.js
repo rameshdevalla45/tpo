@@ -171,7 +171,7 @@ export default () => {
         open={open}
       >
           <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Acceptance of this Agreement        </BootstrapDialogTitle>
+          Terms And Services       </BootstrapDialogTitle>
         
         <DialogContent dividers style={{color:"#7c8ba1"}}>
           <Typography gutterBottom>

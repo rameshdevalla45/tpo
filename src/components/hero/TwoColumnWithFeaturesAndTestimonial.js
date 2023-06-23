@@ -60,15 +60,15 @@ export default ({
       <NavLink className="smoothscroll" href="/#features" style={{color:"#150e45"}}>Features</NavLink>
       <NavLink className="smoothscroll" href="#pricing" style={{color:"#150e45"}}>Pricing</NavLink>
       <NavLink className="smoothscroll" href="/#contactsales" style={{color:"#150e45"}}>Contact Sales</NavLink>
-      <NavLink className="smoothscroll" href="/#jobposting" style={{color:"#150e45"}}>Job Postings</NavLink>
+      <NavLink className="smoothscroll" href="http://localhost:4080/user/login" target="_blank" style={{color:"#150e45"}}>Job Postings</NavLink>
 
       {/*   <NavLink href="/#">Testimonials</NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!" style={{color:"#150e45"}}>
+      <NavLink href="http://localhost:4080/user/login" tw="lg:ml-12!" style={{color:"#150e45"}} target="_blank">
         Login
       </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="/#">
+      <PrimaryLink css={buttonRoundedCss} href="http://localhost:4080/user/sign-up" target="_blank">
         Sign Up
       </PrimaryLink>
     </NavLinks>

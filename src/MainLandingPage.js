@@ -83,7 +83,7 @@ const ResizableBox = styled(Rnd)`
   ${tw`relative! bg-white pr-4`}
   .resizeHandleWrapper > div {
     ${tw`w-4! right-0!`}
-  }
+  } 
 `;
 const ResizeHandleButton = tw.button`cursor-col-resize focus:outline-none w-4 border-l bg-gray-100 absolute right-0 inset-y-0`;
 

@@ -84,7 +84,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     {
       imageSrc: ReliableIconImage,
       title: "AI Resume Builder",
-      description: "Create a professional, well structured resume with personalized guidance, showcasing your skills, experiences, and achievements."
+      description: "Create a professional, well structured resume with personalized guidance, showcasing your skills, and achievements."
     },
     {
       imageSrc: FastIconImage,
