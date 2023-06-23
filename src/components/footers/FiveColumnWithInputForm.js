@@ -231,7 +231,7 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Tpo.AI</LogoText>
+            <LogoText>tpo.ai</LogoText>
           </LogoContainer>
           <CopywrightNotice>&copy; 2023 TPO.AI  All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>

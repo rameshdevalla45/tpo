@@ -6,7 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 //import { NavLink } from "react-router-dom";
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/tpo_ai.png";
+import logo from "../../images/tpo.ai_logo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 const Header = tw.header`
@@ -84,7 +84,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      <img style={{width:"130px",height:"70px"}} src={logo} alt="logo" />
+      <img style={{width:"90px",height:"50px"}} src={logo} alt="logo" />
     </LogoLink>
   );
 
