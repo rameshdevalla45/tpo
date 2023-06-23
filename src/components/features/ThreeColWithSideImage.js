@@ -39,7 +39,7 @@ const Card = styled.div`
     }
   }
 
-  .textContainer {
+  .textContainer { 
     ${tw`sm:ml-4 mt-4 sm:mt-2`}
   }
 

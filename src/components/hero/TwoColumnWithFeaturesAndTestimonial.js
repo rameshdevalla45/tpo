@@ -16,12 +16,12 @@ const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-
 const Column = tw.div``;
 const TextColumn = tw(Column)`mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl`;
 const Heading = tw(SectionHeading)`text-left text-primary-1000 leading-snug xl:text-6xl`;
-const Description = tw(SectionDescription)`mt-4 lg:text-base text-gray-700 max-w-lg`;
+const Description = tw(SectionDescription)`mt-4 lg:text-base text-gray-700 max-w-lg text-secondary-100`;
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block w-56 tracking-wide text-center py-5  bg-gradient-to-r from-primary-1000 to-secondary-1000`;
 const FeatureList = tw.ul`mt-12 leading-loose`;
-const Feature = tw.li`flex items-center`;
+const Feature = tw.li`flex items-center `;
 const FeatureIcon = tw(CheckboxIcon)`w-5 h-5 text-secondary-1000`;
-const FeatureText = tw.p`ml-2 font-medium text-gray-700`;
+const FeatureText = tw.p`ml-2 font-medium text-gray-700 text-secondary-100`;
 const ImageColumn = tw(Column)`ml-auto lg:mr-0 relative mt-16 lg:mt-0 lg:ml-32`;
 const ImageContainer = tw.div`relative z-40 transform xl:-translate-x-24 xl:-translate-y-16`;
 const Image = tw.img`max-w-full w-96 rounded-t sm:rounded relative z-20`;
@@ -60,6 +60,8 @@ export default ({
       <NavLink className="smoothscroll" href="/#features" style={{color:"#150e45"}}>Features</NavLink>
       <NavLink className="smoothscroll" href="#pricing" style={{color:"#150e45"}}>Pricing</NavLink>
       <NavLink className="smoothscroll" href="/#contactsales" style={{color:"#150e45"}}>Contact Sales</NavLink>
+      <NavLink className="smoothscroll" href="/#jobposting" style={{color:"#150e45"}}>Job Postings</NavLink>
+
       {/*   <NavLink href="/#">Testimonials</NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>

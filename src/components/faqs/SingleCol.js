@@ -44,24 +44,40 @@ export default ({
   description = "And we have got answers to all of them.",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "What is a TPO.AI?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "TPO.AI is an online platform specifically designed to assist college students and graduates in finding job placements. These websites utilize artificial intelligence (AI) technology to automate and optimize the job placement process for students by matching them with relevant job opportunities based on their skills, qualifications, and career preferences. The TPO.AI acts as a virtual assistant, helping college students navigate the transition from academia to the professional world."
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "How does a TPO.AI work?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        `The functioning of a TPO.AI typically involves the following steps: 1 Student Profiles: College students create profiles on the website, providing information about their educational background, areas of study, skills, and career preferences., 2 Data Analysis: AI algorithms analyze student profiles and process relevant data to understand their qualifications, interests, and job requirements.
+        3.Job Matching: Based on the data analysis, the AI algorithms match students with job opportunities that align with their profiles. Factors such as industry, location, skills, and job requirements are taken into consideration.4.Job Recommendations: The TPO.AI presents students with recommended job opportunities, allowing them to review and apply for positions that match their interests and qualifications.
+        5.Career Guidance: Some TPO.AI provide additional resources and guidance to help students improve their employability. This may include resume-building tools, interview preparation materials, and career development resources.
+        `
+        
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "What are the benefits of using a TPO.AI?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      `Utilizing a TPO.AI offers several benefits:
+       1.Efficient Job Matching: AI algorithms can efficiently match college students with relevant job opportunities, saving time and effort compared to manual job searches.
+      2.Personalized Recommendations: The AI algorithms take into account the student's profile, qualifications, and career preferences, providing personalized job recommendations tailored to their specific needs.
+      3. Industry Connections: It helps to often have partnerships with companies and organizations, allowing students to access a wide range of job openings and internship opportunities.
+      4.Skill Enhancement: TPO.AI offers resources to help students develop and enhance the skills required for their desired career paths, increasing their employability.
+      5.Networking Opportunities: This platform facilitates connections between students and industry professionals, providing networking opportunities that can be valuable for future career prospects.`
     },
     {
-      question: "Where can I reach you for support ?",
+      question: " Can a TPO.AI guarantee job placement for college students?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      ` While a TPO.AI can significantly assist college students in their job search, it cannot guarantee job placement. The AI algorithms and matching processes can identify suitable job opportunities based on the student's profile and preferences. However, the final decision lies with the employers who evaluate candidates based on various factors.
+      Job placement also depends on external factors such as market conditions, competition, and the student's efforts. Students should actively engage in the job search process, refine their skills, and leverage their college's career services in addition to using the TPO.AI to increase their chances of securing a job.`
+    },
+    {
+      question: "Is TPO.AI for colleges free to use?",
+      answer:
+      `  The availability and cost structure of TPO.AI may vary. Some platforms offer free access to their basic features, allowing students to create profiles and browse job listings. However, they may charge for additional premium services, such as advanced job matching, personalized career coaching, or exclusive internship opportunities.
+      Other platforms may operate on a subscription or partnership model with colleges, where the institution provides access to the platform as part of their career services for students. It's advisable to review the pricing details and terms of service of each platform to understand the costs and access options available.`
     }
   ]
 }) => {

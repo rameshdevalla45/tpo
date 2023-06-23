@@ -22,16 +22,16 @@ export default ({
   description = " TPO.AI Bridging the Gap between Education and Employment for College Graduates.",
   stats = [
     {
-      key: "Clients",
-      value: "2500+",
+      key: "Universities & Colleges",
+      value: "15+ ",
     },
     {
-      key: "Revenue",
-      value: "$100M+",
+      key: "Students",
+      value: "800+",
     },
     {
-      key: "Employees",
-      value: "150+",
+      key: "Industrial training partners",
+      value: "10+ ",
     },
   ]
 }) => {
