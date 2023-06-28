@@ -60,15 +60,15 @@ export default ({
       <NavLink className="smoothscroll" href="/#features" style={{color:"#150e45"}}>Features</NavLink>
       <NavLink className="smoothscroll" href="#pricing" style={{color:"#150e45"}}>Pricing</NavLink>
       <NavLink className="smoothscroll" href="/#contactsales" style={{color:"#150e45"}}>Contact Sales</NavLink>
-      <NavLink className="smoothscroll" href="http://localhost:4080/user/login" target="_blank" style={{color:"#150e45"}}>Job Postings</NavLink>
+      <NavLink className="smoothscroll" href="https://app.tpo.ai/user/login" target="_blank" style={{color:"#150e45"}}>Job Postings</NavLink>
 
       {/*   <NavLink href="/#">Testimonials</NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
-      <NavLink href="http://localhost:4080/user/login" tw="lg:ml-12!" style={{color:"#150e45"}} target="_blank">
+      <NavLink href="https://app.tpo.ai/user/login" tw="lg:ml-12!" style={{color:"#150e45"}} target="_blank">
         Login
       </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="http://localhost:4080/user/sign-up" target="_blank">
+      <PrimaryLink css={buttonRoundedCss} href="https://app.tpo.ai/user/sign-up" target="_blank">
         Sign Up
       </PrimaryLink>
     </NavLinks>

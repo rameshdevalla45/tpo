@@ -27,7 +27,7 @@ export default ({
   subheading = "Interested in TPO.AI ?",
   heading = "Join the closed beta now.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "http://localhost:4080/",
+  primaryLinkUrl = "https://app.tpo.ai/",
   secondaryLinkText = "Contact Us",
   secondaryLinkUrl = "http://google.com",
   pushDownFooter = true
