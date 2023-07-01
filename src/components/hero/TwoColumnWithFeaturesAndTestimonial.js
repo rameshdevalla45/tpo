@@ -43,7 +43,7 @@ export default ({
   imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
   imageDecoratorBlob = true,
 
-  primaryButtonUrl = "https://google.com/",
+/*   primaryButtonUrl = "https://google.com/", */
   primaryButtonText = "Get Started",
   buttonRounded = true,
   features = ["Accurate Skill Assessment", "Personalized Learning Pathways", "Automated Resume Building", "Industry Connections"],
@@ -88,7 +88,7 @@ export default ({
                 WebkitTextFillColor: 'transparent',
               }}>{heading}</Heading>
               <Description>{description}</Description>
-              <PrimaryButton as="a" href={primaryButtonUrl} css={buttonRoundedCss}>
+              <PrimaryButton as="a" /* href={primaryButtonUrl}  */css={buttonRoundedCss}>
                 {primaryButtonText}
               </PrimaryButton>
               <FeatureList>
@@ -114,7 +114,7 @@ export default ({
               <Offsetbackground />
             </ImageColumn> */}
             <video controls style={{ width: "650px" }}>
-              <source src="/Product Overview.mp4" type="video/mp4" />
+              <source src="/video_TpoAi.mp4" type="video/mp4" />
             </video>
           </Row>
         </ContentWithVerticalPadding>

@@ -25,9 +25,9 @@ const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 tr
 export default ({
   text = "Developers all over the world are happily using Treact.",
   primaryLinkText = "Get Started  ",
-  primaryLinkUrl = "http://timerse.com",
+ // primaryLinkUrl = "http://timerse.com",
   secondaryLinkText = "Contact Us",
-  secondaryLinkUrl = "http://google.com",
+  //secondaryLinkUrl = "http://google.com",
   pushDownFooter = true
 }) => {
   return (
@@ -39,8 +39,8 @@ export default ({
             <Text>{text}</Text>
           </TextContainer>
           <LinksContainer>
-            <PrimaryLink href={primaryLinkUrl}>{primaryLinkText}</PrimaryLink>
-            <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink>
+            <PrimaryLink /* href={primaryLinkUrl} */>{primaryLinkText}</PrimaryLink>
+            <SecondaryLink /* href={secondaryLinkUrl} */>{secondaryLinkText}</SecondaryLink>
           </LinksContainer>
         </Row>
         <DecoratorBlobContainer>

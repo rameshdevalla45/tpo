@@ -27,9 +27,9 @@ export default ({
   subheading = "Interested in TPO.AI ?",
   heading = "Join the closed beta now.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "https://app.tpo.ai/",
+  //primaryLinkUrl = "https://app.tpo.ai/",
   secondaryLinkText = "Contact Us",
-  secondaryLinkUrl = "http://google.com",
+  //secondaryLinkUrl = "http://google.com",
   pushDownFooter = true
 }) => {
   return (
@@ -50,8 +50,8 @@ export default ({
         }}>{heading}</Heading>
           </TextContainer>
           <LinksContainer>
-            <PrimaryLink href={primaryLinkUrl}>{primaryLinkText}</PrimaryLink>
-            <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink>
+            <PrimaryLink /*  href={primaryLinkUrl} */>{primaryLinkText}</PrimaryLink>
+            <SecondaryLink /* href={secondaryLinkUrl} */>{secondaryLinkText}</SecondaryLink>
           </LinksContainer>
         </Row>
         <DecoratorBlobContainer>
