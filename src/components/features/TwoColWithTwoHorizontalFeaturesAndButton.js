@@ -99,7 +99,7 @@ export default ({
       Icon: MoneyIcon,
       title: "Time Saving",
       description: "TPO.AI utilizes advanced algorithms and automation to streamline the training and placement processes and save significant time.",
-      iconContainerCss: tw`bg-red-300 text-red-800`
+      iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
   
   ];
