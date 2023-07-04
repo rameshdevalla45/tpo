@@ -94,6 +94,7 @@ export default ({
         <Column>
           <HeaderContent>
           {subheading && <Subheading style={{
+            marginTop:"-100px",
                 background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',

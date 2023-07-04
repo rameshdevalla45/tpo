@@ -49,7 +49,7 @@ const Quote = tw.blockquote`mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-
 const CustomerInfoAndControlsContainer = tw.div`mt-auto flex justify-between items-center flex-col sm:flex-row  `;
 
 const CustomerInfo = tw.div`flex flex-col sm:flex-row items-center justify-center lg:justify-start`;
-const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`;
+/* const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`; */
 const CustomerTextInfo = tw.div`text-center md:text-left sm:ml-6 mt-2 sm:mt-0  `;
 const CustomerName = tw.h5`font-bold text-xl `;
 const CustomerTitle = tw.p`font-medium  `;
@@ -79,24 +79,50 @@ export default ({
   testimonials = [
     {
       stars: 5,
+      heading: "I am grateful for the opportunities ",
+      quote:
+        "Thanks to the comprehensive training and guidance I received at TPO.AI, I now feel confident and equipped to pursue a successful career in the ever-evolving field of technology and knowledge. I gained during my time with TPO.AI, and I carry them with me as I continue on my journey. ",
+      customerName: "Taswin",
+      /* customerTitle: "CEO, Delos Inc." */
+    },
+    {
+      stars: 5,
+      heading: "Truly Amazing Experience ",
+      quote:
+        "One of the biggest advantages I gained from TPO.AI was the emphasis on real-world projects. Through industry collaborations, I had the opportunity to apply my knowledge and build a portfolio that greatly impressed employers during job interviews. ",
+      customerName: "Sai Reddy",
+      /* customerTitle: "CEO, Delos Inc." */
+    }, 
+    {
+      stars: 5,
+      profileImageSrc:
+        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      heading: "I have successfully transitioned into a career I'm truly passionate about.",
+      quote:
+        "At TPO.AI, I had the opportunity to embark on a transformative learning experience. Their expertise and support were invaluable in sharpening my problem-solving abilities and collaborative mindset. Thanks to TPO.AI",
+      customerName: "Jayraj",
+      /* customerTitle: "Founder, EventsNYC" */
+    },
+    {
+      stars: 5,
+      profileImageSrc:
+        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      heading: "TPO.AI have offered to our students have been instrumental in bridging the gap between academia and industry.  ",
+      quote:
+        "At TPO.AI, I had the opportunity to embark on a transformative learning experience. Their expertise and support were invaluable in sharpening my problem-solving abilities and collaborative mindset. Thanks to TPO.AI",
+      customerName: "Sudheer, PNC & KR College ",
+      /* customerTitle: "Founder, EventsNYC" */
+    },
+    {
+      stars: 5,
       profileImageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
       heading: "Amazing User Experience",
       quote:
         "The platform's comprehensive features and personalized guidance have helped them assess their skills, explore career paths, and secure valuable internship opportunities. Our students are more confident and prepared for their professional journeys, thanks to tpo.ai.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
+      /* customerName: "Charlotte Hale", */
+      /* customerTitle: "CEO, Delos Inc." */
     },
-   /*  {
-      stars: 5,
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      heading: "Love the Developer Experience and Design Principles !",
-      quote:
-        "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
-    } */
   ]
 }) => {
   const [sliderRef, setSliderRef] = useState(null);
@@ -127,13 +153,17 @@ export default ({
                   <TestimonialHeading>{testimonial.heading}</TestimonialHeading>
                   <Quote>{testimonial.quote}</Quote>
                   <CustomerInfoAndControlsContainer>
-                    {/* <CustomerInfo>
-                      <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} />
+                    {/*  */}
+                    
+                     <CustomerInfo>
+                     {/*  <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} /> */}
                       <CustomerTextInfo>
                         <CustomerName>{testimonial.customerName}</CustomerName>
                         <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
                       </CustomerTextInfo>
-                    </CustomerInfo> */}
+                    </CustomerInfo> 
+                    
+                    {/*  */}
                     <Controls>
                       <ControlButton onClick={sliderRef?.slickPrev}>
                         <ArrowLeftIcon />

@@ -128,7 +128,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
             </Column>
           ))}
           <video controls style={{ width: "650px" }}>
-            <source src="/videos/tpoAI.mp4" type="video/mp4" />
+            <source src="/videos/video_Aitpo.mp4" type="video/mp4" />
           </video>
         </TwoColumnContainer>
         <DecoratorBlob />

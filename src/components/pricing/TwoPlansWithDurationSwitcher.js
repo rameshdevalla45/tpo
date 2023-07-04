@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -79,19 +79,19 @@ export default ({
       text: "Annum",
       switcherText: "Yearly",
     },
-   /*  {
-      text: "Annum",
-      switcherText: "Yearly",
-    } */
+    /*  {
+       text: "Annum",
+       switcherText: "Yearly",
+     } */
   ]
 }) => {
   const defaultPlans = [
     {
       name: "Individual Subscription",
       durationPrices: ["₹800", "₹0"],
-       
-     mainFeature: "Per Student",
-      features: ["AI Skill Evaluator", "Personalized Learning Paths", "AI Resume Builder", "Performance Analytics","Placement Assistance"]
+
+      mainFeature: "Per Student",
+      features: ["AI Skill Evaluator", "Personalized Learning Paths", "AI Resume Builder", "Performance Analytics", "Placement Assistance"]
     },
     {
       name: "College Subscription",
@@ -110,18 +110,19 @@ export default ({
     <Container id="pricing">
       <ContentWithPaddingXl>
         <HeaderContainer>
-        {subheading && <Subheading style={{
-                background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}>{subheading}</Subheading>}
+          {subheading && <Subheading style={{
+            marginTop: "-100px",
+            background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+          }}>{subheading}</Subheading>}
           <Heading>{heading}</Heading>
           {description && <Description>{description}</Description>}
-        <PlanDurationSwitcher>
-          {planDurations.map((planDuration, index) => (
-            <SwitchButton active={activeDurationIndex === index} key={index} onClick={() => setActiveDurationIndex(index)}>{planDuration.switcherText}</SwitchButton>
-          ))}
-        </PlanDurationSwitcher>
+          <PlanDurationSwitcher>
+            {planDurations.map((planDuration, index) => (
+              <SwitchButton active={activeDurationIndex === index} key={index} onClick={() => setActiveDurationIndex(index)}>{planDuration.switcherText}</SwitchButton>
+            ))}
+          </PlanDurationSwitcher>
         </HeaderContainer>
         <PlansContainer>
           {plans.map((plan, index) => (

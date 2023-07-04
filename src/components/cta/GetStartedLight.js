@@ -39,6 +39,7 @@ export default ({
         <Row>
           <TextContainer>
             {subheading && <Subheading style={{
+          marginTop:"-30px",
           background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',

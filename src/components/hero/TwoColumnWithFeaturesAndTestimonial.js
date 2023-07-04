@@ -11,7 +11,7 @@ import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-c
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg"
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg"
 
-const Header = tw(HeaderBase)`max-w-none`;
+const Header = tw(HeaderBase)`max-w-none mt-8`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
 const Column = tw.div``;
 const TextColumn = tw(Column)`mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl`;
@@ -43,7 +43,7 @@ export default ({
   imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
   imageDecoratorBlob = true,
 
-/*   primaryButtonUrl = "https://google.com/", */
+  /*   primaryButtonUrl = "https://google.com/", */
   primaryButtonText = "Get Started",
   buttonRounded = true,
   features = ["Accurate Skill Assessment", "Personalized Learning Pathways", "Automated Resume Building", "Industry Connections"],
@@ -57,15 +57,15 @@ export default ({
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink className="smoothscroll" href="/#features" style={{color:"#150e45"}}>Features</NavLink>
-      <NavLink className="smoothscroll" href="#pricing" style={{color:"#150e45"}}>Pricing</NavLink>
-      <NavLink className="smoothscroll" href="/#contactsales" style={{color:"#150e45"}}>Contact Sales</NavLink>
-      <NavLink className="smoothscroll" href="https://app.tpo.ai/user/login" target="_blank" style={{color:"#150e45"}}>Job Postings</NavLink>
+      <NavLink className="smoothscroll" href="/#features" style={{ color: "#150e45" }}>Features</NavLink>
+      <NavLink className="smoothscroll" href="#pricing" style={{ color: "#150e45" }}>Pricing</NavLink>
+      <NavLink className="smoothscroll" href="/#contactsales" style={{ color: "#150e45" }}>Contact Sales</NavLink>
+      <NavLink className="smoothscroll" href="https://app.tpo.ai/user/login" target="_blank" style={{ color: "#150e45" }}>Job Postings</NavLink>
 
       {/*   <NavLink href="/#">Testimonials</NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
-      <NavLink href="https://app.tpo.ai/user/login" tw="lg:ml-12!" style={{color:"#150e45"}} target="_blank">
+      <NavLink href="https://app.tpo.ai/user/login" tw="lg:ml-12!" style={{ color: "#150e45" }} target="_blank">
         Login
       </NavLink>
       <PrimaryLink css={buttonRoundedCss} href="https://app.tpo.ai/user/sign-up" target="_blank">
@@ -78,17 +78,18 @@ export default ({
       <div className="navbar">
         <Header links={navLinks} />
       </div>
-      <Container> 
+      <Container>
         <ContentWithVerticalPadding>
           <Row>
             <TextColumn>
               <Heading style={{
+                marginTop: "-30px",
                 background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}>{heading}</Heading>
               <Description>{description}</Description>
-              <PrimaryButton as="a" /* href={primaryButtonUrl}  */css={buttonRoundedCss}>
+              <PrimaryButton as="a" /* href={primaryButtonUrl}  */ css={buttonRoundedCss}>
                 {primaryButtonText}
               </PrimaryButton>
               <FeatureList>
@@ -112,7 +113,11 @@ export default ({
                 </Testimonial>
               </ImageContainer>
               <Offsetbackground />
-            </ImageColumn> */}
+            </ImageColumn> 
+
+            1st Video 
+
+            */}
             <video controls style={{ width: "650px" }}>
               <source src="/video_TpoAi.mp4" type="video/mp4" />
             </video>

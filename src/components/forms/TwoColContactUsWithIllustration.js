@@ -55,6 +55,7 @@ export default ({
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
           {subheading && <Subheading style={{
+            marginTop:"-60px",
                 background: '-webkit-linear-gradient(left,#02c197, #006a9a)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
