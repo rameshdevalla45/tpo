@@ -4,7 +4,6 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
-
 import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
@@ -16,7 +15,7 @@ import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStartedLight.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
-
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
  * the prebuilt landing page components by uncommenting their import and export lines respectively.
@@ -120,16 +119,33 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; */
+
+import GetStart from "./getStart"
 const HighlightedText = tw.span`text-primary-1000`
+
+
+
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
+  const [isExploding, setIsExploding] = React.useState(false);
 
+
+  const largeProps = {
+    force: 0.8,
+    duration: 3000,
+    particleCount: 300,
+    width: 1600,
+    colors: ['#041E43', '#1471BF', '#5BB4DC', '#FC027B', '#66D805'],
+  };
 
   return (
-    <>
+
+      <>
+      <BrowserRouter>
       <GlobalStyles />
-      <AnimationRevealPage>
+    <Routes>
+      <Route path="/" element={ <AnimationRevealPage>
       <Hero />
       <FeatureStats/>
       <Features 
@@ -178,8 +194,16 @@ export default function App() {
       <ContactUsForm/>
       <GetStarted/>
       <Footer />
-    </AnimationRevealPage>
+    </AnimationRevealPage>} />
+<Route path="/launch" element={ <GetStart />}/>
+      
+     
+
+</Routes>
+</BrowserRouter>
     </>
+    
+   
   );
 }
 
